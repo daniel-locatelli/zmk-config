@@ -53,9 +53,9 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  _       │  =       │
-            &kp     &kp      &kp      &kp      &kp         &kp    &kp   &kp   &kp     &kp COLON
+            &kp     &kp      &kp      &kp      &kp         &kp     &kp   &kp   &kp     &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  -       │  +       │  €       │  "       │  '       │   │  \       │  {       │  }       │  ;       │  :       │
+        //│  -       │   +      │  €       │  "       │  '       │   │  \       │  {       │  }       │  ;       │  :       │
             &kp     &kp      &kp      &kp      &kp         &kp    &kp    &kp    &kp    &kp 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ~       │  |       │  <       │  >       │  `       │   │  /       │  (       │  )       │  [       │  ]       │
@@ -69,31 +69,33 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │  /       │  1       │  2       │  3       │  -       │
-            &kp      &kp        &kp        &kp        &kp         &kp FSLH   &kp N1     &kp N2     &kp N3     &kp MINUS
+        //│          │  1       │   2      │   3      │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
+            &kp      &kp        &kp        &kp        &kp            &kp    &kp      &kp      &kp      &kp 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │  *       │  4       │  5       │  6       │  +       │
-            &kp      &kp        &kp        &kp        &kp       &kp ASTRK  &kp N4     &kp N5     &kp N6     &kp PLUS
+        //│          │  4       │   5      │   6      │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
+            &kp      &kp        &kp        &kp        &kp            &kp   &kp      &kp      &kp      &kp 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │  0       │  7       │  8       │  9       │  .       │
-            &kp     &kp     &kp     &kp     &kp         &kp N0     &kp N7     &kp N8     &kp N9     &kp DOT
+        //│          │  7       │  8       │   9      │  0       │   │          │          │          │          │          │
+            &kp     &kp     &kp     &kp     &kp                      &kp      &kp      &kp      &kp      &kp 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
+        // FN + NUMPAD = function keys
+        // Arrows
 
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
+        //│BOOTLOADER│ PREV     │ PLAY     │ NEXT     │PROFILE 0 │   │          │  F1      │  F2      │  F3      │  F4      │
+           &bootloader  &trans     &trans     &trans  &bt BT_SEL 0   &trans     &trans     &trans     &trans    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
+        //│ CLEAR BT |MUTED     │VOL DOWN  │VOL UP    │PROFILE 1 │   │          │  F5      │  F6      │  F7      │   F8     │
+           &bt BT_CLR  &trans     &trans     &trans   &bt BT_SEL 1   &trans     &trans     &trans     &trans    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
+        //│BRIGHTKEY-│BRIGHTKEY+│ BRIGHT - │ BRIGHT + │PROFILE 2 │   │          │  F9      │  F10     │  F11     │  F12     │
+           &trans    &trans     &trans     &trans     &bt BT_SEL 2   &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
