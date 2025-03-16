@@ -57,7 +57,7 @@
             &kp EXCL  &kp AT     &kp POUND  &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp STAR   &kp UNDER  &kp EQUAL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  -       │   +      │  €       │  "       │  '       │   │  \       │      {   │  }       │  ;       │  :       │
-           HRML(MINUS  PLUS       RA(N5)     DQT)      &kp APOS       &kp BSLH   HRMR(LBRC  RBRC       SEMI       COLON)
+           &kp MINUS  &kp PLUS   &kp RA(N5) &kp DQT    &kp APOS       &kp BSLH   &kp LBRC   &kp RBRC   &kp SEMI   &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ~       │  |       │  <       │  >       │  `       │   │  /       │  (       │  )       │  [       │  ]       │
            &kp TILDE  &kp PIPE2  &kp LT     &kp GT     &kp GRAVE      &kp FSLH   &kp LPAR   &kp RPAR   &kp LBKT   &kp RBKT
@@ -91,10 +91,10 @@
           &bootloader &kp C_PREV &kp C_PP   &kp C_NEXT &bt BT_SEL 0   &trans     &kp F1     &kp F2     &kp F3     &kp F4
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CLEAR BT |MUTED     │VOL DOWN  │VOL UP    │PROFILE 1 │   │          │  F5      │  F6      │  F7      │   F8     │
-          HRML(BT_CLR C_MUTE     C_VOL_DN   C_VOL_UP)  &bt BT_SEL 1   &trans    HRMR(F5       F6         F7          F8)
+          &bt BT_CLR &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &bt BT_SEL 1 &trans    &kp F5     &kp F6     &kp F7     &kp F8
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │ BRIGHT - │ BRIGHT + │PROFILE 2 │   │          │  F9      │  F10     │  F11     │  F12     │
-           &trans    &trans   &kp C_BRI_DN &kp C_BRI_UP &bt BT_SEL 2  &trans       &kp F9     &kp F10    &kp F11    &kp F12
+           &trans    &trans   &kp C_BRI_DN &kp C_BRI_UP &bt BT_SEL 2  &trans     &kp F9     &kp F10    &kp F11    &kp F12
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
