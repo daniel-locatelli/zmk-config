@@ -74,8 +74,8 @@
         //│PRINT SCRN│  7       │   8      │   9      │          │   │          │ PAGE UP  │ UP       │ PAGE DN  │          │
            &kp PSCRN  &kp N7     &kp N8     &kp N9     &trans         &trans     &kp PG_UP  &kp UP     &kp PG_DN  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│CAPS LOCK │  4       │   5      │   6      │          │   │          │ LEFT     │ DOWN     │ RIGHT    │ MENU         │
-           HRML(CAPS, N4,        N5,        N6)        &trans        &trans     HRMR(LEFT,  DOWN,      RIGHT,      K_CMENU)
+        //│CAPS LOCK │  4       │   5      │   6      │          │   │          │ LEFT     │ DOWN     │ RIGHT    │ MENU     │
+           HRML(CAPS, N4,        N5,        N6)        &trans        &trans     HRMR(LEFT,  DOWN,      RIGHT,      K_APP)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  INSERT  │  1       │  2       │   3      │  0       │   │          │ HOME     │          │ END      │          │
            &kp INS    &kp N1     &kp N2     &kp N3     &kp N0         &trans     &kp HOME   &trans     &kp END    &trans 
