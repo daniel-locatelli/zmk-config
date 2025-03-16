@@ -98,8 +98,8 @@
         //│  F1      │  F2      │  F3      │  F4      │MIDDLE CLK│   | MUTED    │ BRIGHT + │ BRIGHT - │ RALT     │ PREV     │
            &kp F1     &kp F2     &kp F3     &kp F4     &mkp MCLK    &kp C_MUTE &kp C_BRI_UP &kp C_BRI_DN &kp RALT   &kp C_PREV
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-        //                                 │          │BOOTLOADER|   │          │BOOTLOADER│
-                                            &trans    &bootloader    &bootloader &trans
+        //                                 │BOOTLOADER│          │   │          │BOOTLOADER│
+                                           &bootloader &trans        &bootloader &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
