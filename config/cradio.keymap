@@ -63,7 +63,7 @@
            &kp TILDE  &kp PIPE2  &kp LT     &kp GT     &kp GRAVE      &kp FSLH   &kp LPAR   &kp RPAR   &kp LBKT   &kp RBKT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 │          │  ESCAPE  │   │  DELETE  │          │
-                                             &trans     &kp ESC        &kp DEL     &trans
+                                            &trans     &kp ESC        &kp DEL     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -72,13 +72,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│PRINT SCRN│  7       │   8      │   9      │          │   │          │ PAGE UP  │ UP       │ PAGE DN  │          │
-           &PSCRN     &kp N7     &kp N8     &kp N9     &trans         &trans     &kp PG_UP  &kp UP     &kp PG_DN  &trans
+           &kp PSCRN     &kp N7     &kp N8     &kp N9     &trans         &trans     &kp PG_UP  &kp UP     &kp PG_DN  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│CAPS LOCK │  4       │   5      │   6      │          │   │          │ LEFT     │ DOWN     │ RIGHT    │          │
-           &CAPS       &kp N4     &kp N5     &kp N6     &trans        &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans
+           &kp CAPS       &kp N4     &kp N5     &kp N6     &trans        &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  INSERT  │  1       │  2       │   3      │  0       │   │          │ HOME     │          │ END      │          │
-           &INS       &kp N1     &kp N2     &kp N3     &kp N0         &trans     &kp HOME   &trans     &kp END    &trans 
+           &kp INS       &kp N1     &kp N2     &kp N3     &kp N0         &trans     &kp HOME   &trans     &kp END    &trans 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -89,7 +89,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  F9      │  F10     │  F11     │  F12     │RIGHT CLK │   │ VOL UP   │ SCRL UP  │ MOUS UP  │SCRL DOWN │ NEXT     │
-           &kp F9     &kp F10    &kp F11    &kp F12    &mkp RCLK    &kp C_VOL_UP &trans     &trans     &trans     &kp C_NEXT
+           &kp F9     &kp F10    &kp F11    &kp F12    &mkp RCLK    &kp C_VOL_UP &msc SCRL_UP &mmv MOVE_UP &msc SCRL_DOWN &kp C_NEXT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  F5      │  F6      │  F7      │   F8     │LEFT CLK  │   │ VOL DOWN │MOUS LEFT │MOUS DOWN │MOUS RIGHT│ PLAY     │
            &kp F5     &kp F6     &kp F7     &kp F8     &mkp LCLK    &kp C_VOL_DN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp C_PP
