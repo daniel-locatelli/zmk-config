@@ -59,7 +59,7 @@
             &kp EXCL  &kp AT     &kp POUND  &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp STAR   &kp UNDER  &kp EQUAL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  -       │   +      │  €       │  "       │  '       │   │  \       │      {   │  }       │  ;       │  :       │
-         HRML2(MINUS  PLUS       RA(N5)     DQT)       &kp APOS       &kp BSLH  HRMR2(LBRC    RBRC      SEMI       COLON)
+          &kp MINUS   &kp PLUS        &kp RA(N5)      &kp DQT       &kp APOS       &kp BSLH  HRMR2(LBRC    RBRC      SEMI       COLON)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ~       │  |       │  <       │  >       │  `       │   │  /       │  (       │  )       │  [       │  ]       │
            &kp TILDE  &kp PIPE2  &kp LT     &kp GT     &kp GRAVE      &kp FSLH   &kp LPAR   &kp RPAR   &kp LBKT   &kp RBKT
