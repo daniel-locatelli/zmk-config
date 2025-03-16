@@ -80,7 +80,7 @@
         //│  INSERT  │  1       │  2       │   3      │  0       │   │          │ HOME     │          │ END      │          │
            &kp INS    &kp N1     &kp N2     &kp N3     &kp N0         &trans     &kp HOME   &trans     &kp END    &trans 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-        //                                 |          |          |   │          │  DELETE  │
+        //                                 │          │          │   │          │  DELETE  │
                                              &trans     &trans        &trans     &kp DEL
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
@@ -96,9 +96,9 @@
            &kp F5     &kp F6     &kp F7     &kp F8     &mkp LCLK    &kp C_VOL_DN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp C_PP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  F1      │  F2      │  F3      │  F4      │MIDDLE CLK│   | MUTED    │ BRIGHT + │ BRIGHT - │ RALT     │ PREV     │
-           &kp F1     &kp F2     &kp F3     &kp F4     &mkp MCLK    &kp C_MUTE &kp C_BRI_UP &kp C_BRI_DN &RALT   &kp C_PREV
+           &kp F1     &kp F2     &kp F3     &kp F4     &mkp MCLK    &kp C_MUTE &kp C_BRI_UP &kp C_BRI_DN &kp RALT   &kp C_PREV
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-        //                                 │          │BOOTLOADER|   │BOOTLOADER|          │
+        //                                 │          │BOOTLOADER|   │          │BOOTLOADER│
                                             &trans    &bootloader    &bootloader &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
