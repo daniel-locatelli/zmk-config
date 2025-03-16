@@ -57,7 +57,7 @@
             &kp EXCL  &kp AT     &kp POUND  &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp STAR   &kp UNDER  &kp EQUAL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  -       │   +      │  €       │  "       │  '       │   │  \       │      {   │  }       │  ;       │  :       │
-           &kp MINUS  &kp PLUS   &kp RA(N5) &kp DQT    &kp APOS       &kp BSLH   &kp LBRC   &kp RBRC   &kp SEMI   &kp COLON
+          HRML(MINUS  PLUS       RA(N5)     DQT)       &kp APOS       &kp BSLH  HRMR(LBRC    RBRC      SEMI       COLON)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ~       │  |       │  <       │  >       │  `       │   │  /       │  (       │  )       │  [       │  ]       │
            &kp TILDE  &kp PIPE2  &kp LT     &kp GT     &kp GRAVE      &kp FSLH   &kp LPAR   &kp RPAR   &kp LBKT   &kp RBKT
@@ -75,7 +75,7 @@
            &kp PSCRN     &kp N7     &kp N8     &kp N9     &trans         &trans     &kp PG_UP  &kp UP     &kp PG_DN  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│CAPS LOCK │  4       │   5      │   6      │          │   │          │ LEFT     │ DOWN     │ RIGHT    │          │
-           &kp CAPS       &kp N4     &kp N5     &kp N6     &trans        &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans
+           &kp CAPS    &kp N4     &kp N5     &kp N6     &trans        &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  INSERT  │  1       │  2       │   3      │  0       │   │          │ HOME     │          │ END      │          │
            &kp INS       &kp N1     &kp N2     &kp N3     &kp N0         &trans     &kp HOME   &trans     &kp END    &trans 
