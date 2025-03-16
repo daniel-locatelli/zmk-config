@@ -71,11 +71,11 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│PRINT SCRN│  7       │   8      │   9      │          │   │          │ PAGE UP  │ UP       │ PAGE DN  │          │
-           &kp PSCRN  &kp N7     &kp N8     &kp N9     &trans         &trans     &kp PG_UP  &kp UP     &kp PG_DN  &trans
+        //│PRINT SCRN│  7       │   8      │   9      │          │   │ CLS TAB  │ PAGE UP  │ UP       │ PAGE DN  │          │
+           &kp PSCRN  &kp N7     &kp N8     &kp N9     &trans         &kp RA(F4) &kp PG_UP  &kp UP     &kp PG_DN  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│CAPS LOCK │  4       │   5      │   6      │          │   │          │ LEFT     │ DOWN     │ RIGHT    │ MENU     │
-           HRML(CAPS, N4,        N5,        N6)        &trans        &trans     HRMR(LEFT,  DOWN,      RIGHT,      K_APP)
+        //│CAPS LOCK │  4       │   5      │   6      │          │   │ CLS WIND │ LEFT     │ DOWN     │ RIGHT    │ MENU     │
+           HRML(CAPS, N4,        N5,        N6)        &trans         &kp LC(F4) HRMR(LEFT,  DOWN,      RIGHT,      K_APP)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  INSERT  │  1       │  2       │   3      │  0       │   │          │ HOME     │          │ END      │          │
            &kp INS    &kp N1     &kp N2     &kp N3     &kp N0         &trans     &kp HOME   &trans     &kp END    &trans 
@@ -95,8 +95,8 @@
         //│  F5      │  F6      │  F7      │   F8     │LEFT CLK  │   │ VOL DOWN │MOUS LEFT │MOUS DOWN │MOUS RIGHT│ PLAY     │
            &kp F5     &kp F6     &kp F7     &kp F8     &mkp LCLK    &kp C_VOL_DN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp C_PP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  F1      │  F2      │  F3      │  F4      │MIDDLE CLK│   | MUTED    │ BRIGHT + │ BRIGHT - │          │ PREV     │
-           &kp F1     &kp F2     &kp F3     &kp F4     &mkp MCLK    &kp C_MUTE &kp C_BRI_UP &kp C_BRI_DN &trans   &kp C_PREV
+        //│  F1      │  F2      │  F3      │  F4      │MIDDLE CLK│   | MUTED    │ BRIGHT + │ BRIGHT - │ RALT     │ PREV     │
+           &kp F1     &kp F2     &kp F3     &kp F4     &mkp MCLK    &kp C_MUTE &kp C_BRI_UP &kp C_BRI_DN &RALT   &kp C_PREV
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 │          │BOOTLOADER|   │BOOTLOADER|          │
                                             &trans    &bootloader    &bootloader &trans
