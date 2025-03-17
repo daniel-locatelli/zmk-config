@@ -4,6 +4,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
 #include <dt-bindings/zmk/pointing.h>
 
 // Home row mods macro
@@ -74,8 +78,8 @@
         //│PRINT SCRN│  7       │   8      │   9      │  000000  │   │ CLS TAB  │          │          │          │          │
            &kp PSCRN  &kp N7     &kp N8     &kp N9     &trans         &kp LA(F4) &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│CAPS LOCK │  4       │   5      │   6      │  000     │   │ CLS WIND │ PAGE UP  │ UP       │ PAGE DN  │ MENU     │
-           HRML(CAPS, N4,        N5,        N6)        &trans         &kp LC(F4) HRMR(PG_DN,  UP,      PG_DN,      K_APP)
+        //│CAPS LOCK │  4       │   5      │   6      │  000     │   │ CLS WIND │ PAGE DN  │ UP       │ PAGE UP  │ MENU     │
+           HRML(CAPS, N4,        N5,        N6)        &trans         &kp LC(F4) HRMR(PG_DN,  UP,      PG_UP,      K_APP)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  INSERT  │  1       │  2       │   3      │  0       │   │ HOME     │ LEFT     │ DOWN     │ RIGHT    │ END      │
            &kp INS    &kp N1     &kp N2     &kp N3     &kp N0         &kp HOME   &kp LEFT   &kp DOWN   &kp RIGHT  &kp END 
@@ -89,11 +93,11 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  F9      │  F10     │  F11     │  F12     │RIGHT CLK │   │ VOL UP   │ BRIGHT + │          │ BRIGHT - │ NEXT     │
-           &kp F9     &kp F10    &kp F11    &kp F12    &mkp RCLK    &kp C_VOL_UP &kp C_BRI_UP &trans  &kp C_BRI_DN &kp C_NEXT
+        //│  F9      │  F10     │  F11     │  F12     │RIGHT CLK │   │ VOL UP   │ BRIGHT - │          │ BRIGHT + │ NEXT     │
+           &kp F9     &kp F10    &kp F11    &kp F12    &mkp RCLK    &kp C_VOL_UP &kp C_BRI_DN &trans  &kp C_BRI_UP &kp C_NEXT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  F5      │  F6      │  F7      │   F8     │LEFT CLK  │   │ VOL DOWN │SCRL DOWN │ MOUS UP  │SCRL DOWN │ PLAY     │
-           &kp F5     &kp F6     &kp F7     &kp F8     &mkp LCLK    &kp C_VOL_DN &msc SCRL_UP &mmv MOVE_UP &kp SCRL_DOWN &kp C_PP
+        //│  F5      │  F6      │  F7      │   F8     │LEFT CLK  │   │ VOL DOWN │SCRL DOWN │ MOUS UP  │ SCRL UP  │ PLAY     │
+           &kp F5     &kp F6     &kp F7     &kp F8     &mkp LCLK    &kp C_VOL_DN &msc SCRL_DOWN &mmv MOVE_UP &kp SCRL_UP &kp C_PP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  F1      │  F2      │  F3      │  F4      │MIDDLE CLK│   | MUTED    │MOUS LEFT │MOUS DOWN │MOUS RIGHT│ PREV     │
            &kp F1     &kp F2     &kp F3     &kp F4     &mkp MCLK    &kp C_MUTE &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp C_PREV
