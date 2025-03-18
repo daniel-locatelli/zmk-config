@@ -76,10 +76,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│PRINT SCRN│  7       │   8      │   9      │  000000  │   │          │          │ PREV     │ PLAY     │ NEXT     │
-           &kp PSCRN  &kp N7     &kp N8     &kp N9     &trans         &trans     &kp trans &kp C_PREV   &kp C_PP  &kp C_NEXT
+           &kp PSCRN  &kp N7     &kp N8     &kp N9     &trans         &trans     &trans &kp C_PREV   &kp C_PP  &kp C_NEXT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│CAPS LOCK │  4       │   5      │   6      │  000     │   │          │ LEFT     │ DOWN     │ UP       │ RIGHT    │
-           HRML(CAPS, N4,        N5,        N6)        &trans         &trans     HRMR(PG_DN, DOWN,      UP,        RIGHT)
+           HRML(CAPS, N4,        N5,        N6)        &trans         &trans     HRMR(LEFT, DOWN,      UP,        RIGHT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  INSERT  │  1       │  2       │   3      │  0       │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
            &kp INS    &kp N1     &kp N2     &kp N3     &kp N0         &trans     &kp HOME   &kp PG_DN &kp PG_UP  &kp END 
