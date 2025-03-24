@@ -35,6 +35,19 @@
         };
     };
 
+    macros {
+      
+        vs_code: vs_code {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp RGUI>
+                , <&macro_tap &kp V &kp S &kp C &kp O &kp D &kp E>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -81,8 +94,8 @@
         //│CAPS LOCK │  4       │   5      │   6      │  000     │   │          │ LEFT     │ DOWN     │ UP       │ RIGHT    │
            HRML(CAPS, N4,        N5,        N6)        &trans         &trans     HRMR(LEFT, DOWN,      UP,        RIGHT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  INSERT  │  1       │  2       │   3      │  0       │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
-           &kp INS    &kp N1     &kp N2     &kp N3     &kp N0         &trans     &kp HOME   &kp PG_DN &kp PG_UP  &kp END 
+        //│  INSERT  │  1       │  2       │   3      │  0       │   │CONTE MENU│ HOME     │ PAGE DN  │ PAGE UP  │ END      │
+           &kp INS    &kp N1     &kp N2     &kp N3     &kp N0         &kp K_CMENU &kp HOME   &kp PG_DN &kp PG_UP  &kp END 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 │          │          │   │          │  DELETE  │
                                              &trans     &trans        &trans     &kp DEL
