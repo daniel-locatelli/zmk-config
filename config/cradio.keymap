@@ -50,7 +50,8 @@ ZMK_HOLD_TAP(hmr,
 
 / {
 
-    behaviors {
+    macros {
+        // Define your macro here instead
         dqs_macro: dqs_macro { // Node name: dqs_macro
             compatible = "zmk,behavior-macro";
             label = "DQT_WITH_SPACE"; // Reference label: &dqt_with_space
