@@ -49,6 +49,16 @@ ZMK_HOLD_TAP(hmr,
 // --- End Timeless Homerow Mods Configuration --- 
 
 / {
+
+    behaviors {
+        dqs_macro: dqs_macro { // Node name: dqs_macro
+            compatible = "zmk,behavior-macro";
+            label = "DQT_WITH_SPACE"; // Reference label: &dqt_with_space
+            #binding-cells = ; // Macros don't take parameters here
+            bindings = <&kp DQT &kp SPACE>; // Action: Press ", press space
+        };
+    };
+
     key_positions {
         compatible = "zmk,key-positions";
         positions = <
@@ -57,14 +67,6 @@ ZMK_HOLD_TAP(hmr,
             LB4 LB3 LB2 LB1 LB0      RB0 RB1 RB2 RB3 RB4
                      LH1 LH0          RH0 RH1
         >;
-    };
-
-    behaviors {
-        dqt_with_space: macro_0 {
-            compatible = "zmk,behavior-macro";
-            label = "DQT with SPACE";
-            bindings = <&kp DQT &kp SPACE>;
-        };
     };
 
     conditional_layers {
