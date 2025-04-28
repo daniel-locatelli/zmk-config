@@ -24,7 +24,7 @@
 #define THUMBS LH1 LH0 RH0 RH1 // Uses labels defined in 34.h
 
 // Left-hand Timeless Home Row Mods behavior (using urob/zmk-config timings/flavor)
-ZMK_HOLD_TAP(hml,
+ZMK_HOLD_TAP(hml, hml_behavior,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
@@ -35,7 +35,7 @@ ZMK_HOLD_TAP(hml,
 )
 
 // Right-hand Timeless Home Row Mods behavior (using urob/zmk-config timings/flavor)
-ZMK_HOLD_TAP(hmr,
+ZMK_HOLD_TAP(hmr, hmr_behavior,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
