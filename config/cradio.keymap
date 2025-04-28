@@ -54,7 +54,6 @@ ZMK_HOLD_TAP(hmr,
         dqs_macro: dqs_macro { // Node name: dqs_macro
             compatible = "zmk,behavior-macro";
             label = "DQT_WITH_SPACE"; // Reference label: &dqt_with_space
-            #binding-cells = ; // Macros don't take parameters here
             bindings = <&kp DQT &kp SPACE>; // Action: Press ", press space
         };
     };
