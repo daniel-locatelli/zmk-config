@@ -51,12 +51,12 @@ ZMK_HOLD_TAP(hmr,
 / {
 
     behaviors {
-        dqs_macro: dqs_macro { // Node name: dqs_macro
+        dqt_with_space: macro_0 { // Node name: dqs_macro
             compatible = "zmk,behavior-macro";
             label = "DQT_WITH_SPACE"; // Reference label: &dqt_with_space
             bindings = <&kp DQT &kp SPACE>; // Action: Press ", press space
         };
-        apos_macro: apos_macro { // Node name: dqs_macro
+        apos_with_space: macro_1 { // Node name: dqs_macro
             compatible = "zmk,behavior-macro";
             label = "APOS_WITH_SPACE"; // Reference label: &dqt_with_space
             bindings = <&kp APOS &kp SPACE>; // Action: Press ", press space
