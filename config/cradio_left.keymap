@@ -50,7 +50,7 @@ ZMK_HOLD_TAP(hmr,
 
 
 / {
-    &kscan0 {
+    kscan0: kscan {
         compatible = "zmk,kscan-gpio-direct";
         wakeup-source;
 
@@ -63,7 +63,7 @@ ZMK_HOLD_TAP(hmr,
         , <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&gpio1 7      (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&pro_micro  1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&pro_micro  2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&pro_micro  3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
